@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payoo | Login page</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+
+    <!-- tailwind & daisyui -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+     <!-- font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<!-- icons -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    *{
+        font-family: "Outfit", sans-serif;
+    }
+</style>
+</head>
+<body class="max-w-md min-h-screen mx-auto bg-[#F4F5F7]">
+
+    <div class="logo w-[270px] mx-auto pt-[210px] pb-[32px]">
+        <img src="./assets/Logo-full.png" alt="">
+    </div>
+    
+            <!-- form -->
+
+    <div class="form">
+         <div class="card bg-base-100 w-full max-w-sm shrink-0 mx-auto rounded-[24px]">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label text-[#080808] font-bold mb-[12px]"> <main>Mobile Number</main></label>
+          <input id="mobile" type="text" maxlength="11" minlength="11" class="input rounded-full bg-[#F4F5F7] border-none mb-[16px]" placeholder="Enter your number" />
+          <label class="label text-[#080808] font-bold mb-[12px]">4 Digit Pin</label>
+          <input id="pin" type="password" maxlength="4" minlength="4" class="input rounded-full bg-[#F4F5F7] border-none mb-[16px]" placeholder="Password" />
+          <button id="login-btn" class="btn btn-primary mt-4 rounded-full">Login</button>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+
+  <script src="./Scripts/login.js"></script>  
+</body>
+</html>
